@@ -19,6 +19,7 @@ Builds the android framework for LiteWave.
 
 ```
 android {
+  ...
   signingConfigs {
     config {
       keyAlias 'LiteWave'
@@ -30,6 +31,16 @@ android {
 }
 ```
 
+- add the signingConfig to the build type within the android block:
+
+```
+android {
+  ...
+  release {
+    signingConfig signingConfigs.config
+  }
+}
+```
 
 
 
