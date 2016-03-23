@@ -2,6 +2,17 @@
 
 Builds the android framework for LiteWave.
 
+## Source Code Changes
+
+- Need to remove from the activity block in the app/manifests/AndroidManifest.xml file the following for each activity:
+
+```
+<activity
+  ...
+  android:theme="@style/AppTheme"
+</activity>
+```
+
 ## Build
 
 - Open View|Tool Windows|Gradle
