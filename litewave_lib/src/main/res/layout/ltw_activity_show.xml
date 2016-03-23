@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activites.ShowActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-150px"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/countdownTextView"
+            android:enabled="true"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="600px"
+            android:background="#00000000"
+            android:gravity="center"
+            app:layout_widthPercent="100%"
+            />
+
+        <TextView
+            android:id="@+id/showStartTextView"
+            android:enabled="true"
+            android:text="SHOW STARTS IN"
+            android:layout_above="@id/countdownTextView"
+            android:layout_marginBottom="-50px"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_widthPercent="100%"
+            android:textSize="65px"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/showHelpTextView"
+            android:enabled="true"
+            android:text="Point your screen toward the court once the show begins"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="60px"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50px"
+            app:layout_widthPercent="85%"
+            />
+
+        <TextView
+            android:id="@+id/winnerTextView"
+            android:enabled="true"
+            android:text="WINNER!"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="200px"
+            android:background="#00000000"
+            android:gravity="center"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="100%"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000"
+    tools:context=".activities.ResultsActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/textThanks"
+        android:enabled="true"
+        android:text="Thanks for Participating!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90px"
+        android:textAlignment="center"
+        android:textColor="@color/ltw_default_text"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:textSize="28dp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_width="460dp"
+        android:layout_height="29dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="powered by"
+        android:id="@+id/textPoweredBy"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/lwLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="112px"
+        android:layout_marginBottom="50px"
+        android:id="@+id/lwLogo"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/ltw_logosm"
+        android:layout_above="@+id/returnButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:text="RETURN"
+        android:id="@+id/returnButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        app:layout_widthPercent="100%"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:background="#00000000"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewWinner"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>

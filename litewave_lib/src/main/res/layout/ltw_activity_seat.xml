@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view"
+    tools:context=".activities.SeatActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/chooseLevelLinearLayout">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="?android:attr/actionBarSize"
+            android:id="@+id/sectionsListView"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            app:layout_widthPercent="33%"
+            />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="?android:attr/actionBarSize"
+            android:id="@+id/rowsListView"
+            android:listSelector="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            app:layout_widthPercent="33%"
+            />
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seatsListView"
+            android:paddingBottom="?android:attr/actionBarSize"
+            android:listSelector="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            app:layout_widthPercent="33%"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:text="CONTINUE"
+            android:id="@+id/joinButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            app:layout_widthPercent="100%"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</RelativeLayout>

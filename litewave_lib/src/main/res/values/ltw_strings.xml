@@ -1,0 +1,11 @@
+<resources>
+    <string name="ltw_app_name">LiteWave</string>
+    <string name="ltw_action_settings">Settings</string>
+    //Activity Resources
+    <string name="ltw_title_activity_choose_seat">Choose seat</string>
+    <string name="ltw_noEventsToday">"There are curently no events scheduled."</string>
+    //Client IDs
+    <string name="ltw_clientID_Blazers">5260316cbf80240000000001</string>
+    //URL Resources
+    <string name="ltw_apiURL">http://www.litewaveinc.com/api/</string>
+</resources>

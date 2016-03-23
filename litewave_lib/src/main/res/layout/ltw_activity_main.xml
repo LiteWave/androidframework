@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.MainActivity"
+    android:id="@+id/view"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noEventsTextView"
+            android:enabled="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/ltw_default_text"
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            app:layout_widthPercent="80%"
+            app:layout_marginTopPercent="10%"
+            android:textSize="30dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/poweredByTextView"
+            android:enabled="true"
+            android:layout_width="460dp"
+            android:layout_height="29dp"
+            android:text="powered by"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/logoImage"
+            android:visibility="invisible"
+            android:textColor="@android:color/black"
+             />
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="500px"
+            android:layout_height="112px"
+            android:layout_marginBottom="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/ltw_logosm"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>
