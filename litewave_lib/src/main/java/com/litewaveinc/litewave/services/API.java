@@ -3,6 +3,8 @@ package com.litewaveinc.litewave.services;
 import android.content.Context;
 import android.util.Log;
 
+import org.apache.http.message.BasicHeader;
+import org.apache.http.protocol.HTTP;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -138,6 +140,7 @@ public final class API {
         } catch (Exception e) {
             return;
         }
+        entity.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
 
         Log.d("Debug", "Requesting: " + method + ":" + apiURL.toString());
 
